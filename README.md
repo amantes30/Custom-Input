@@ -1,1 +1,1 @@
-[![Watch the video](https://raw.githubusercontent.com/username/repository/branch/path/to/thumbnail.jpg)](https://raw.githubusercontent.com/amantes30/Custom-Input/main/intro.mp4)
+[![Video Preview](https://img.youtube.com/vi/DxyvUFvUWuE/0.jpg)](https://www.youtube.com/watch?v=DxyvUFvUWuE)
