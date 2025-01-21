@@ -1,5 +1,5 @@
 /* NECESSARY */
-.blink{
+#terminal-form.active .blink{
     animation: blink 1s infinite;
 }
 @keyframes blink {
@@ -34,8 +34,22 @@ body{
     overflow-wrap: anywhere;
     max-width: 1000px;
     margin: auto;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#terminal-form.active{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.77), 0 0 20px 0 rgba(0, 0, 0, 0.7);
 }
+#terminal-form:not(.active) .blink{
+    visibility: hidden;
+}
+a{
+    pointer-events: all;
+    color: white;
+}
+h1,h2{
+    pointer-events: none;
+}
+
 .error{
     color: red;
 }
