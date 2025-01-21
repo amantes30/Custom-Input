@@ -14,41 +14,10 @@
 </head>
 <body>
     <h1 class="title">HTML Terminal / Custom Input</h1>
-<div id="container">
+<div id="terminal-form">
     <h1>~/amantes30><span id="active" class="text"></span><span class="blink">_</span></h1>
 </div>
 
-<script>
-
-    document.addEventListener('keypress', function(event) {
-        const container = document.getElementById('container');
-        const text = document.getElementById('active');
-        if (event.key === "Enter") {
-            text.id="";
-            text.parentElement.children[1].innerHTML = "";
-            const output = document.createElement('h1');
-            //submit(output.textContent)
-            output.textContent = text.textContent;
-            container.appendChild(output);
-            const newline = document.createElement('h1');
-            newline.innerHTML = `~/amantes30><span id="active" class="text"></span><span class="blink">_</span>`
-            container.appendChild(newline);
-            container.scrollTo(0, container.scrollHeight)
-            return
-        }
-
-        let curr_text = text.textContent;
-        let temp = curr_text.split('')
-        temp[temp.length] = event.key;
-        text.textContent = temp.join('');
-    })
-    document.addEventListener('keydown', function(event) {
-
-        const text = document.getElementById('active');
-        if (event.key === "Backspace") {
-            text.textContent = text.textContent.slice(0,-1);
-        }
-    })
-</script>
+<script src="app.js"></script>
 </body>
 </html>
